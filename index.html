@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
-  <body>
+  <body ng-app = "portApp">
     <header>
       about projects contact
     </header>
@@ -18,13 +18,17 @@
         PORTFOLIO
       </header>
 
-      <section class="projects-section">
-        <a href="https://adred8.github.io/reading-app/">
+      <section class="projects-section" ng-controller = "portCtrl">
+
+        {{data.name}}
+
+        <!-- <a href="https://adred8.github.io/reading-app/">
           <img src="https://raw.githubusercontent.com/adred8/reading-app/master/Capture.JPG" alt="">
-        </a>
-        <a href="https://adred8.github.io/tasks/">
+        </a> -->
+        <!-- <a href="https://adred8.github.io/tasks/">
           <img src="https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG" alt="">
-        </a>
+        </a> -->
+
       </section >
 
       <footer>

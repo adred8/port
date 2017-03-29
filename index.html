@@ -1,44 +1,55 @@
-
-<html>
+<!DOCTYPE html>
+<html ng-app = "portApp">
 
   <head>
     <title>Hello !</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/col.css">
   </head>
 
-  <body ng-app = "portApp">
+  <body>
     <header>
-      about projects contact
+      <ul class="nav-bar col-lg-8">
+        <li><button type="button" name="button">ABOUT</button></li>
+        <li><button type="button" name="button">PORTFOLIO</button></li>
+        <li><button type="button" name="button">CONTACT</button></li>
+      </ul>
+
+      <section class="col-lg-4">
+        <button class="resume-download-button" type="button" name="button">Download Resume</button>
+      </section>
+
     </header>
 
     <article>
-      <header>
-        PORTFOLIO
-      </header>
 
-      <section class="projects-section" ng-controller = "portCtrl">
+      <h1>
+        MY PORTFOLIO
+      </h1>
 
-        {{data.name}}
+      <section class="projects-section" ng-controller = "portCtrl" >
 
-        <!-- <a href="https://adred8.github.io/reading-app/">
-          <img src="https://raw.githubusercontent.com/adred8/reading-app/master/Capture.JPG" alt="">
-        </a> -->
-        <!-- <a href="https://adred8.github.io/tasks/">
-          <img src="https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG" alt="">
-        </a> -->
+        <section ng-repeat = "project in projectData">
+
+          <a class="project-link" ng-href="{{project.url}}">
+            <img class = "project-img" ng-src="{{project.img}}" alt="" >
+          </a>
+        </section>
 
       </section >
 
-      <footer>
-
-      </footer>
     </article>
 
     <footer>
-      contact details
+      <ul class="social-buttons-bar">
+        <li><button type="button" name="button">FB</button></li>
+        <li><button type="button" name="button">TW</button></li>
+        <li><button type="button" name="button">LK</button></li>
+      </ul>
     </footer>
+
+    <script type="text/javascript" src = "scripts/angular.min.js"></script>
+    <script type="text/javascript" src = "scripts/main.js"></script>
   </body>
 
 </html>

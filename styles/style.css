@@ -1,5 +1,7 @@
 *{
   outline: 1px solid green;
+  margin: 0;
+  padding: 0;
 }
 
 *, *:after, *:before {
@@ -9,24 +11,72 @@
 }
 
 body{
-  /*padding: 0 10%;*/
-  background-color: lightgray;
+  background-color: lightblue;
 }
 
+button{
+  cursor: pointer;
+}
+
+/******************************************************************************/
+/*Heder*/
+/******************************************************************************/
 header{
-
+  margin: 0 10%;
+  background-color: darkblue;
+  height: 60px;
 }
 
+header li{
+  list-style: none;
+  display: inline-block;
+}
+
+li button{
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+
+.resume-download-button{
+  display: inline-block;
+  background-color: lightgrey;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+
+/******************************************************************************/
+/*Article*/
+/******************************************************************************/
 article{
   margin: 0 10%;
   background-color: white;
+  clear: both;
 }
 
 img{
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
+  margin: 10% 10%;
 }
 
-footer{
+.projects-section{
+  clear: both;
+}
 
+/******************************************************************************/
+/*Footer*/
+/******************************************************************************/
+footer{
+  background-color: black;
+  height: 100px;
+  color: grey;
+  clear: both;
+}
+
+footer li{
+  list-style: none;
+  display: inline-block;
+  float: right;
 }

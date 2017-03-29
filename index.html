@@ -16,7 +16,10 @@
       </ul>
 
       <section class="col-lg-4">
-        <button class="resume-download-button" type="button" name="button">Download Resume</button>
+        <a target="_blank" href="https://drive.google.com/open?id=0B0TdFI_PBrKDdkVKS0NOV2tvSms">
+          <button class="resume-download-button" type="button" name="button">Download Resume</button>
+        </a>
+
       </section>
 
     </header>
@@ -29,9 +32,9 @@
 
       <section class="projects-section" ng-controller = "portCtrl" >
 
-        <section ng-repeat = "project in projectData">
+        <section class = "singleProject" ng-repeat = "project in projectData">
 
-          <a class="project-link" ng-href="{{project.url}}">
+          <a class="project-link" target="_blank" ng-href="{{project.url}}">
             <img class = "project-img" ng-src="{{project.img}}" alt="" >
           </a>
         </section>

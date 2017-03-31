@@ -41,6 +41,7 @@ header li{
   border: none;
   width: 100px;
   height: 40px;
+  background-color: white;
   border-radius: 13px;
   margin: 10px 15px;
 }
@@ -95,17 +96,18 @@ article{
 }
 
 .project-link{
-  width: 60%;
+  width: 50%;
   height: 34%;
   margin: 10% 10%;
 }
 
 .project-img{
-  width: 60%;
+  width: 50%;
   height: 34%;
   margin: 10% 10%;
   border: 2px solid #0D47A1;
 }
+
 .project-img:hover{
   box-shadow: 2px 2px 20px #E3F2FD;
 }
@@ -146,47 +148,20 @@ footer li{
 /*MEDIUM DISPLAY*/
 /******************************************************************************/
 /******************************************************************************/
-
 @media (min-width:768px) and (max-width:991px){
-
   /******************************************************************************/
-  /*Heder*/
+  /*Article*/
   /******************************************************************************/
-  header{
-    margin: 0 7%;
-    background-color: #0D47A1;
-    /*width: 100%;*/
-    height: 60px;
+
+  .singleProject{
+    display: block;
+    width: 100%;
   }
 
-  header li{
-    list-style: none;
-    display: inline-block;
-  }
-
-  .nav-bar button{
-    border: none;
-    width: 100px;
-    height: 40px;
-    border-radius: 13px;
-    margin: 10px 15px;
-  }
-  .nav-bar button:hover{
-    font-weight: bolder;
-  }
-
-  .resume-download-button{
-    display: inline-block;
-    background-color: #29a329;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    width: 150px;
-    height: 40px;
-    margin: 10px;
-
-    float: right;
+  .project-link{
+    width: 100%;
+    height: 100%;
+    margin: 10% 10%;
   }
 
 }
@@ -200,50 +175,34 @@ footer li{
   /******************************************************************************/
   /*Heder*/
   /******************************************************************************/
-  header{
-    margin: 0 7%;
-    background-color: #0D47A1;
-    /*width: 100%;*/
-    height: 60px;
-  }
-
-  header li{
-    list-style: none;
-    display: inline-block;
-  }
-
   .contact-button-link{
     display: block;
   }
   .contact-button-link button{
 
     border: none;
-    width: 100px;
+    width: 90px;
     height: 40px;
     border-radius: 13px;
     margin: 10px 15px;
   }
-
   .nav-bar{
     display: none;
   }
 
-  .nav-bar button:hover{
-    font-weight: bold;
+  /******************************************************************************/
+  /*Article*/
+  /******************************************************************************/
+
+  .singleProject{
+    display: block;
+    width: 100%;
   }
 
-  .resume-download-button{
-    display: inline-block;
-    background-color: #29a329;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    border: none;
-    width: 150px;
-    height: 40px;
-    margin: 10px;
-
-    float: right;
+  .project-link{
+    width: 100%;
+    height: 100%;
+    margin: 10% 10%;
   }
 
 }

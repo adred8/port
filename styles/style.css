@@ -2,6 +2,7 @@
   /*outline: 1px solid green;*/
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 *, *:after, *:before {
@@ -10,60 +11,121 @@
   box-sizing: border-box;
 }
 
-body{
-
-}
-
 button{
   cursor: pointer;
+}
+
+.default-flat-button{
+  min-width: 80px;
+  height: 36px;
+  margin: 0px 8px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.default-flat-button:focus{
+  outline: none;
+}
+
+.default-raised-button{
+  min-width: 80px;
+  height: 36px;
+  margin: 0px 8px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.default-raised-button:focus{
+  outline: none;
+}
+
+.default-raised-button:hover{
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+.default-fba{
+  min-width: 56px;
+  min-height: 56px;
+  height: 48px;
+  margin: 0px 8px;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 1px 1px 6px 1px gray;
+}
+
+.default-fba:hover{
+  box-shadow: 1px 1px 12px 1px gray;
+}
+.default-fba:focus{
+  outline: none;
+}
+
+.default-fba:visited{
+  outline: none;
+}
+
+body{
+  min-height: 100px;
+  /*background-color: #f4f4f4;*/
+  background-color: #ffffff;
 }
 
 /******************************************************************************/
 /*Heder*/
 /******************************************************************************/
 header{
-  margin: 0 7%;
-  background-color: #0D47A1;
-  /*width: 100%;*/
-  height: 60px;
+  background-color: #ffeb3b;
+  padding: 0px 16px;
+  height: 64px;
+  /*position: fixed;*/
+  /*top: 0px;*/
+  width: 100%;
+  box-shadow: 1px 1px 6px 4px lightgray;
 }
 
-header li{
-  list-style: none;
-  display: inline-block;
+.home-link-section{
+  padding-left: 72px;
+  padding-top: 14px;
+  font-size: 14px;
+  height: 100%;
+  /*font-family: */
 }
-
-.contact-button-link{
-  display: none;
-}
-
-.nav-bar button{
-  border: none;
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  border-radius: 13px;
-  margin: 10px 15px;
-}
-.nav-bar button:hover{
-  font-weight: bolder;
-}
-
-.resume-download-button{
-  display: inline-block;
-  background-color: #29a329;
+.home-link{
+  text-decoration: none;
   color: black;
-  font-weight: bold;
-  font-size: 15px;
-  border: none;
-  width: 150px;
-  height: 40px;
-  margin: 10px;
-  border-radius: 10px;
+  /*font-weight: 500;*/
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-bar{
+  height: 100%;
+  padding-top: 14px;
   float: right;
 }
-.resume-download-button:hover{
-  color: #666666;
+.nav-bar li{
+  list-style: none;
+  display: inline;
+}
+.nav-bar button{
+  /*color: white;*/
+  background-color:#ffeb3b;
+  float: right;
+}
+.nav-bar button:hover{
+  /*text-decoration: underline;*/
+  /*border-bottom: 2px solid black;*/
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /******************************************************************************/
@@ -74,73 +136,109 @@ h1{
   text-align: center;
   text-transform: uppercase;
   font-size: 25px;
+  padding: 8px;
+}
+
+.contact-email, .contact-linkedin{
+  text-decoration: none;
+  color: #008ba3;
+
 }
 
 article{
-  margin: 0 7%;
-  background-color: #2196F3;
+  margin: 2% 16%;
+  /*background-color: #2196F3;*/
   clear: both;
 }
 
 .about-section{
-  padding: 30px;
+  padding: 24px;
 }
 
 .self-description{
   margin-top: 20px;
   font-size: 20px;
 }
-
-.name {
-  font-weight: bold;
-}
-
-.project-link{
-  width: 50%;
-  height: 34%;
-  margin: 10% 10%;
-}
-
 .project-img{
-  width: 60%;
-  height: 34%;
-  margin: 10% 10%;
-  border: 2px solid #0D47A1;
-}
-
-.project-img:hover{
-  box-shadow: 2px 2px 20px #E3F2FD;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
 }
 
 .projects-section{
   clear: both;
 }
 
-.singleProject{
-  width: 50%;
+.single-project{
+  width: 46%;
+  margin: 2%;
+  min-height: 100px;
+  /*margin: 16px;*/
+  /*padding: 24px;*/
   display: inline-block;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 0px darkgray;
+  padding-bottom: 8px;
 }
 
-/******************************************************************************/
-/*Footer*/
-/******************************************************************************/
-footer{
-  background-color: #607D8B;
-  height: 80px;
-  clear: both;
+.single-project:hover{
+  box-shadow: 1px 1px 6px 6px lightgray;
 }
 
-footer li{
-  list-style: none;
-  display: inline-block;
+.project-source-button{
+  color: #00bcd4;
+  background-color: white;
   float: right;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.footer-social-buttons-bar button{
+.project-source-button:hover{
+  color: rgba(0, 188, 212, 0.88);
+}
+
+.fba-section button{
+  /*min-width: 56px;
+  min-height: 56px;*/
+  width: 56px;
+  height: 56px;
+  /*height: 48px;*/
+  margin: 0px 8px;
+  padding: 6px 8px;
   border: none;
-  margin: 5px;
-  width: 50px;
-  height: 40px;
+  border-radius: 56px;
+  cursor: pointer;
+  /*font-size: 14px;
+  font-weight: 500;*/
+  box-shadow: 1px 1px 6px 1px gray;
+}
+
+.fba-section button:hover{
+  box-shadow: 1px 1px 12px 1px gray;
+}
+.fba-section button:focus{
+  outline: none;
+}
+
+.fba-section button:visited{
+  outline: none;
+}
+
+.email-button{
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #00bcd4;
+  color: white;
+}
+.resume-download-button{
+  position: fixed;
+  background-color: #00bcd4;
+  bottom: 100px;
+  right: 24px;
+  /*color: black;
+  float: right;*/
 }
 
 /******************************************************************************/
@@ -153,15 +251,10 @@ footer li{
   /*Article*/
   /******************************************************************************/
 
-  .singleProject{
-    display: block;
-    width: 100%;
-  }
-
-  .project-link{
-    width: 100%;
-    height: 100%;
-    margin: 10% 10%;
+  .fba-section button{
+    width: 40px;
+    height: 40px;
+    border-radius:  40px;
   }
 
 }
@@ -175,16 +268,8 @@ footer li{
   /******************************************************************************/
   /*Heder*/
   /******************************************************************************/
-  .contact-button-link{
-    display: block;
-  }
-  .contact-button-link button{
-
-    border: none;
-    width: 90px;
-    height: 40px;
-    border-radius: 13px;
-    margin: 10px 15px;
+  .home-link-section{
+    padding: 14px 56px;
   }
   .nav-bar{
     display: none;
@@ -193,16 +278,37 @@ footer li{
   /******************************************************************************/
   /*Article*/
   /******************************************************************************/
-
-  .singleProject{
-    display: block;
-    width: 100%;
+  button{
+    font-size: 13px;
   }
 
-  .project-link{
-    width: 100%;
-    height: 100%;
-    margin: 10% 10%;
+  .about-section{
+    padding: 16px;
+  }
+  .self-description{
+    font-size: 14px;
+  }
+  .single-project{
+    min-height: 156px;
+    display: block;
+    width: 98%;
+    margin: 10% 1%;
+  }
+
+  .project-img{
+    margin-bottom: 16px;
+  }
+  .fba-section button{
+    width: 40px;
+    height: 40px;
+    border-radius:  40px;
+    right: 8px;
+  }
+  .email-button{
+    bottom: 16px;
+  }
+  .resume-download-button{
+    bottom: 84px;
   }
 
 }

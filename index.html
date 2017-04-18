@@ -5,43 +5,48 @@
     <title>Hello !</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/col.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     <header>
 
-      <a href="#contact" class="col-sm-6 contact-button-link"><button type="button" name="button">CONTACT</button></a>
+      <section class="home-link-section col-lg-4 col-md-4 col-sm-12">
+        <a class = "home-link" href="https://adred8.github.io/port/">Vaibhav Kona</a>
+      </section>
 
       <ul class="nav-bar col-lg-8 col-md-8">
-        <li><a href="#about"><button type="button" name="button">ABOUT</button></a></li>
-        <li><a href="#projects"><button type="button" name="button">PROJECTS</button></a></li>
-        <li><a href="#contact"><button type="button" name="button">CONTACT</button></a></li>
+        <li><a href="#projects"><button class="default-flat-button" type="button" name="button">PROJECTS</button></a></li>
+        <li><a href="#about"><button class="default-flat-button" type="button" name="button">ABOUT</button></a></li>
+
+        <!-- <li><a href="#contact"><button type="button" name="button-">CONTACT</button></a></li> -->
       </ul>
 
-      <section class="col-lg-4 col-md-4 col-sm-6">
+      <!-- <section class=" resume-download-section col-lg-3 col-md-3 col-sm-6">
         <a target="_blank" href="https://drive.google.com/open?id=0B0TdFI_PBrKDdkVKS0NOV2tvSms">
-          <button class="resume-download-button" type="button" name="button">Download Resume</button>
+          <button class="default-raised-button resume-download-button" type="button" name="button">DOWNLOAD RESUME</button>
         </a>
-      </section>
+      </section> -->
 
     </header>
 
     <article>
-
+      <br><br>
       <section id = "about" class = "about-section">
         <h1>
           About
         </h1>
 
         <section class="self-description">
-          Hi, I am <span class="name">Vaibhav</span>. I started to pursue web development as a hobby and
+          Hi, I am Vaibhav. I started to pursue web development as a hobby and
           grew interest as I worked on it. I have working knowledge in HTML, CSS, Javascript, AngularJs.
           <br>
           <br>
-          <p>I am very much interested in taking up full time positions in organisations where I can put forth my skills for use. Connect with me on
-            <a target="_blank" href="https://www.linkedin.com/in/vkona8/">Linkedin</a> or
-            <a target="_top" href="mailto:vkona8@gmail.com?Subject=Hello%20again">email</a> me
+          <p>I am very much interested in taking up full time positions in organisations where I can put forth my skills for best use. Connect with me on
+            <a class = "contact-linkedin" target="_blank" href="https://www.linkedin.com/in/vkona8/">Linkedin</a> or
+            <a class = "contact-email" target="_top" href="mailto:vkona8@gmail.com?Subject=Hello%20again">email</a> me
           </p>
         </section>
       </section>
@@ -53,36 +58,36 @@
           projects
         </h1>
 
-        <section class = "singleProject" ng-repeat = "project in projectData">
+        <section class = "single-project" ng-repeat = "project in projectData">
 
-          <a class="project-link" target="_blank" ng-href="{{project.url}}">
-            <img class = "project-img" ng-src="{{project.img}}" alt="" >
-          </a>
+          <section class="single-project-card">
+            <a class="project-link" target="_blank" ng-href="{{project.url}}">
+              <img class = "project-img" ng-src="{{project.img}}" alt="" >
+              <a ng-href="{{}}"></a><button class="default-flat-button project-source-button" type="button" name="button">SOURCE</button>
+            </a>
+
+          </section>
 
         </section>
 
       </section >
 
+      <section class="fba-section">
+        <a title= "vkona8@gmail.com" class = "contact-email-link" target="_top" href="mailto:vkona8@gmail.com?Subject=Hello%20again">
+          <button class = "email-button" type="button" name="button">
+            <img src="images/email-icon.png" alt="">
+          </button>
+        </a>
+        <a title = "Download resume" class = "resume-download-link" target="_blank" href="https://drive.google.com/open?id=0B0TdFI_PBrKDdkVKS0NOV2tvSms">
+          <button class = "resume-download-button" type="button" name="button">
+            <img src="images/download-icon.png" alt="">
+          </button>
+        </a>
+      </section>
+
     </article>
 
-    <footer id = "contact">
-
-      <a class = "footer-mail" target="_top" href="mailto:vkona8@gmail.com?Subject=Hello%20again">Email</a>
-
-      <ul class="footer-social-buttons-bar">
-        <li>
-          <a href="https://github.com/adred8" target="_blank">
-            <button type="button" name="button">Github</button>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/vkona8/" target="_blank">
-            <button type="button" name="button">Linkedin</button>
-          </a>
-        </li>
-      </ul>
-    </footer>
-
+    <script type="text/javascript" src = "scripts/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src = "scripts/angular.min.js"></script>
     <script type="text/javascript" src = "scripts/main.js"></script>
   </body>

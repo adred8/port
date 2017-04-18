@@ -1,8 +1,20 @@
 console.log("Hello");
+$(document).ready(function(){
+  // $(window).scroll(function (event) {
+  //   var scroll = $(window).scrollTop();
+  //   console.log("scrolle = ", scroll);
+  //   if (scroll >= 215){
+  //     $("header").css("background-color", "#c8b900");
+  //     $(".nav-bar button").css("background-color", "#c8b900");
+  //   }
+  //   else{
+  //     $("header").css("background-color", "#ffeb3b");
+  //     $(".nav-bar button").css("background-color", "#ffeb3b");
+  //   }
+  // });
+});
 
 (function(){
-
-
   var app = angular.module("portApp", []);
 
   app.controller("portCtrl", portCtrl);
@@ -18,8 +30,9 @@ console.log("Hello");
 var projectData = [
       {
         name : "reading-app",
+        // src :
         url : "https://adred8.github.io/reading-app/",
-        img : "https://raw.githubusercontent.com/adred8/reading-app/master/Capture.JPG",
+        img : "https://raw.githubusercontent.com/adred8/reading-app/master/reading-app.JPG",
         tags : ["HTML", "CSS", "JSON"]
       },
       {
@@ -31,25 +44,25 @@ var projectData = [
       {
         name : "remote-working",
         url : "https://adred8.github.io/remote-working/",
-        img : "https://raw.githubusercontent.com/adred8/remote-working/master/Capture.JPG",
+        img : "https://raw.githubusercontent.com/adred8/remote-working/master/remote-working.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
       },
       {
         name : "confirm-reservation",
         url : "https://adred8.github.io/confirm-reservation/",
-        img : "https://raw.githubusercontent.com/adred8/confirm-reservation/master/Capture.JPG",
+        img : "https://raw.githubusercontent.com/adred8/confirm-reservation/master/confirm-reservation.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
       },
       {
         name : "mix-webpage",
         url : "https://adred8.github.io/mix-webpage/",
-        img : "https://raw.githubusercontent.com/adred8/mix-webpage/master/Captured.JPG",
+        img : "https://raw.githubusercontent.com/adred8/mix-webpage/master/mix-webpage.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
       },
       {
         name : "signup-ui",
         url : "https://adred8.github.io/signup-ui/",
-        img : "https://raw.githubusercontent.com/adred8/signup-ui/master/Capture.JPG",
+        img : "https://raw.githubusercontent.com/adred8/signup-ui/master/signup-ui.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
       }
 ];

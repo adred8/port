@@ -251,11 +251,11 @@ article{
   /*Article*/
   /******************************************************************************/
 
-  .fba-section button{
+  /*.fba-section button{
     width: 40px;
     height: 40px;
     border-radius:  40px;
-  }
+  }*/
 
 }
 
@@ -264,7 +264,7 @@ article{
 /*SMALL DISPLAY*/
 /******************************************************************************/
 /******************************************************************************/
-@media (max-width:767px){
+@media (min-width:425px) and (max-width:767px){
   /******************************************************************************/
   /*Heder*/
   /******************************************************************************/
@@ -289,14 +289,109 @@ article{
     font-size: 14px;
   }
   .single-project{
-    min-height: 156px;
+    min-height: 188px;
     display: block;
     width: 98%;
     margin: 10% 1%;
   }
 
   .project-img{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+  }
+  /*.fba-section button{
+    width: 40px;
+    height: 40px;
+    border-radius:  40px;
+    right: 8px;
+  }
+  .email-button{
+    bottom: 16px;
+  }
+  .resume-download-button{
+    bottom: 84px;
+  }*/
+}
+
+@media (min-width:375px) and (max-width:424px){
+  /******************************************************************************/
+  /*Heder*/
+  /******************************************************************************/
+  .home-link-section{
+    padding: 14px 56px;
+  }
+  .nav-bar{
+    display: none;
+  }
+
+  /******************************************************************************/
+  /*Article*/
+  /******************************************************************************/
+  button{
+    font-size: 13px;
+  }
+
+  .about-section{
+    padding: 16px;
+  }
+  .self-description{
+    font-size: 14px;
+  }
+  .single-project{
+    min-height: 180px;
+    display: block;
+    width: 98%;
+    margin: 10% 1%;
+  }
+
+  .project-img{
+    margin-bottom: 8px;
+  }
+  /*.fba-section button{
+    width: 40px;
+    height: 40px;
+    border-radius:  40px;
+    right: 8px;
+  }
+  .email-button{
+    bottom: 16px;
+  }
+  .resume-download-button{
+    bottom: 84px;
+  }*/
+}
+@media (min-width:320px) and (max-width:374px){
+  /******************************************************************************/
+  /*Heder*/
+  /******************************************************************************/
+  .home-link-section{
+    padding: 14px 56px;
+  }
+  .nav-bar{
+    display: none;
+  }
+
+  /******************************************************************************/
+  /*Article*/
+  /******************************************************************************/
+  button{
+    font-size: 13px;
+  }
+
+  .about-section{
+    padding: 16px;
+  }
+  .self-description{
+    font-size: 14px;
+  }
+  .single-project{
+    min-height: 164px;
+    display: block;
+    width: 98%;
+    margin: 10% 1%;
+  }
+
+  .project-img{
+    margin-bottom: 8px;
   }
   .fba-section button{
     width: 40px;
@@ -310,5 +405,4 @@ article{
   .resume-download-button{
     bottom: 84px;
   }
-
 }

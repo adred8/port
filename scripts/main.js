@@ -26,7 +26,7 @@ $(document).ready(function(){
   }
 
 })();
-
+https://raw.githubusercontent.com/adred8/wiki-builder/master/wiki-builder.JPG
 var projectData = [
       {
         name : "reading-app",
@@ -36,11 +36,11 @@ var projectData = [
         tags : ["HTML", "CSS", "JSON"]
       },
       {
-        name : "tasks",
-        src: "https://github.com/adred8/tasks",
-        url : "https://adred8.github.io/tasks/",
-        img : "https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG",
-        tags : ["HTML", "CSS", "AngularJs"]
+        name : "wiki-builder",
+        src : "https://github.com/adred8/wiki-builder",
+        url : "https://adred8.github.io/wiki-builder/",
+        img : "https://raw.githubusercontent.com/adred8/wiki-builder/master/wiki-builder.JPG",
+        tags : ["HTML", "CSS", "JSON"]
       },
       {
         name : "remote-working",
@@ -68,6 +68,13 @@ var projectData = [
         src: "https://github.com/adred8/signup-ui",
         url : "https://adred8.github.io/signup-ui/",
         img : "https://raw.githubusercontent.com/adred8/signup-ui/master/signup-ui.JPG",
+        tags : ["HTML", "CSS", "AngularJs"]
+      },
+      {
+        name : "tasks",
+        src: "https://github.com/adred8/tasks",
+        url : "https://adred8.github.io/tasks/",
+        img : "https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
       }
 ];

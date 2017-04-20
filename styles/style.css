@@ -340,7 +340,7 @@ article{
     font-size: 14px;
   }
   .single-project{
-    min-height: 180px;
+    min-height: 188px;
     display: block;
     width: 98%;
     margin: 10% 1%;
@@ -387,10 +387,10 @@ article{
     font-size: 14px;
   }
   .single-project{
-    min-height: 164px;
+    height: 180px;
     display: block;
-    width: 98%;
-    margin: 10% 1%;
+    width: 94%;
+    margin: 12% 3%;
   }
 
   .project-img{

@@ -50,6 +50,13 @@ var projectData = [
         tags : ["HTML", "CSS", "JSON"]
       },
       {
+        name : "twitch-tv",
+        src: "https://github.com/adred8/twitch-tv",
+        url : "https://adred8.github.io/twitch-tv",
+        img : "https://raw.githubusercontent.com/adred8/twitch-tv/master/twitch-tv.JPG",
+        tags : ["HTML", "CSS", "jquery"]
+      },
+      {
         name : "remote-working",
         src: "https://github.com/adred8/remote-working",
         url : "https://adred8.github.io/remote-working/",

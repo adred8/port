@@ -43,6 +43,13 @@ var projectData = [
         tags : ["HTML", "CSS", "JSON"]
       },
       {
+        name : "students-perfomance",
+        src : "https://github.com/adred8/students-perfomance",
+        url : "https://adred8.github.io/students-perfomance/",
+        img : "https://raw.githubusercontent.com/adred8/students-perfomance/master/students-perfomance.JPG",
+        tags : ["HTML", "CSS", "JSON"]
+      },
+      {
         name : "remote-working",
         src: "https://github.com/adred8/remote-working",
         url : "https://adred8.github.io/remote-working/",

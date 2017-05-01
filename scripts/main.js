@@ -83,12 +83,13 @@ var projectData = [
         url : "https://adred8.github.io/signup-ui/",
         img : "https://raw.githubusercontent.com/adred8/signup-ui/master/signup-ui.JPG",
         tags : ["HTML", "CSS", "AngularJs"]
-      },
-      {
-        name : "tasks",
-        src: "https://github.com/adred8/tasks",
-        url : "https://adred8.github.io/tasks/",
-        img : "https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG",
-        tags : ["HTML", "CSS", "AngularJs"]
       }
+      // },
+      // {
+      //   name : "tasks",
+      //   src: "https://github.com/adred8/tasks",
+      //   url : "https://adred8.github.io/tasks/",
+      //   img : "https://raw.githubusercontent.com/adred8/tasks/master/Capture.JPG",
+      //   tags : ["HTML", "CSS", "AngularJs"]
+      // }
 ];

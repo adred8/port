@@ -57,6 +57,13 @@ var projectData = [
         tags : ["HTML", "CSS", "jquery"]
       },
       {
+        name : "local-weather",
+        src: "https://github.com/adred8/local-weather",
+        url : "https://adred8.github.io/local-weather",
+        img : "https://raw.githubusercontent.com/adred8/local-weather/master/local-weather.PNG",
+        tags : ["HTML", "CSS", "jquery"]
+      },
+      {
         name : "remote-working",
         src: "https://github.com/adred8/remote-working",
         url : "https://adred8.github.io/remote-working/",

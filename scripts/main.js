@@ -28,13 +28,13 @@ $(document).ready(function(){
 })();
 https://raw.githubusercontent.com/adred8/wiki-builder/master/wiki-builder.JPG
 var projectData = [
-        // {
-        //   name : "cooking-todo",
-        //   src : "https://github.com/adred8/cooking-todo",
-        //   url : "https://adred8.github.io/cooking-todo/",
-        //   img : "https://raw.githubusercontent.com/adred8/cooking-todo/master/cooking-todo.JPG",
-        //   tags : ["HTML", "CSS", "JSON"]
-        // },
+        {
+          name : "cooking-todo",
+          src : "https://github.com/adred8/cooking-todo",
+          url : "https://adred8.github.io/cooking-todo/",
+          img : "https://raw.githubusercontent.com/adred8/cooking-todo/master/cooking-todo.JPG",
+          tags : ["HTML", "CSS", "JSON"]
+        },
       {
         name : "reading-app",
         src : "https://github.com/adred8/reading-app",

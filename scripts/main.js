@@ -1,32 +1,30 @@
-console.log("Hello");
-$(document).ready(function(){
-  // $(window).scroll(function (event) {
-  //   var scroll = $(window).scrollTop();
-  //   console.log("scrolle = ", scroll);
-  //   if (scroll >= 215){
-  //     $("header").css("background-color", "#c8b900");
-  //     $(".nav-bar button").css("background-color", "#c8b900");
-  //   }
-  //   else{
-  //     $("header").css("background-color", "#ffeb3b");
-  //     $(".nav-bar button").css("background-color", "#ffeb3b");
-  //   }
-  // });
-});
+// console.log("Hello");
+// $(document).ready(function(){
+//   // $(window).scroll(function (event) {
+//   //   var scroll = $(window).scrollTop();
+//   //   console.log("scrolle = ", scroll);
+//   //   if (scroll >= 215){
+//   //     $("header").css("background-color", "#c8b900");
+//   //     $(".nav-bar button").css("background-color", "#c8b900");
+//   //   }
+//   //   else{
+//   //     $("header").css("background-color", "#ffeb3b");
+//   //     $(".nav-bar button").css("background-color", "#ffeb3b");
+//   //   }
+//   // });
+// });
 
 (function(){
   var app = angular.module("portApp", []);
 
-  app.controller("portCtrl", portCtrl);
+  app.controller("portController", portController);
 
-  portCtrl.$inject = ["$scope"];
-
-  function portCtrl($scope){
-    $scope.projectData = projectData;
-  }
-
+  function portController(){
+    var portCtrl = this;
+    portCtrl.projectData = projectData;
+  };
 })();
-https://raw.githubusercontent.com/adred8/wiki-builder/master/wiki-builder.JPG
+
 var projectData = [
         {
           name : "cooking-todo",
@@ -56,13 +54,13 @@ var projectData = [
         img : "https://raw.githubusercontent.com/adred8/students-perfomance/master/students-perfomance.JPG",
         tags : ["HTML", "CSS", "JSON"]
       },
-      {
-        name : "twitch-tv",
-        src: "https://github.com/adred8/twitch-tv",
-        url : "https://adred8.github.io/twitch-tv",
-        img : "https://raw.githubusercontent.com/adred8/twitch-tv/master/twitch-tv.JPG",
-        tags : ["HTML", "CSS", "jquery"]
-      },
+      // {
+      //   name : "twitch-tv",
+      //   src: "https://github.com/adred8/twitch-tv",
+      //   url : "https://adred8.github.io/twitch-tv",
+      //   img : "https://raw.githubusercontent.com/adred8/twitch-tv/master/twitch-tv.JPG",
+      //   tags : ["HTML", "CSS", "jquery"]
+      // },
       {
         name : "local-weather",
         src: "https://github.com/adred8/local-weather",

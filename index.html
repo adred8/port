@@ -51,19 +51,39 @@
       </section>
 
 
-      <section id = "projects" class="projects-section" ng-controller = "portCtrl" >
+      <section id = "projects" class="projects-section" ng-controller = "portController as portCtrl" >
 
         <h1>
           projects
         </h1>
 
-        <section class = "single-project" ng-repeat = "project in projectData">
+        <section class = "single-project" ng-repeat = "project in portCtrl.projectData">
 
           <section class="single-project-card">
-            <a class="project-link" target="_blank" ng-href="{{project.url}}">
-              <img class = "project-img" ng-src="{{project.img}}" alt="" >
-            </a>
-            <a class = "src-link" ng-href="{{project.src}}" target="_blank"><button class="default-flat-button project-source-button" type="button" name="button">SOURCE</button></a>
+            <section class = "image-section">
+              <a class="project-link" target="_blank" ng-href="{{project.url}}">
+                <img class = "project-img" ng-src="{{project.img}}" alt="" >
+              </a>
+
+              <a class = "src-link" ng-href="{{project.src}}" target="_blank">
+                <button class="default-flat-button project-source-button" type="button" name="button">SOURCE
+                </button>
+              </a>
+            </section>
+
+            <!-- <section class = "description-section">
+
+              <section class="project-details-section">
+
+              </section>
+
+              <a class = "src-link" ng-href="{{project.src}}" target="_blank">
+                <button class="default-flat-button project-source-button" type="button" name="button">
+                  SOURCE
+                </button>
+              </a>
+            </section> -->
+
 
           </section>
 

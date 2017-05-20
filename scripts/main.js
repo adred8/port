@@ -15,13 +15,47 @@
 // });
 
 (function(){
-  var app = angular.module("portApp", []);
+  var app = angular.module("portApp", ["ngRoute"]);
+  app.config(function($routeProvider){
+    $routeProvider
+      .when("/", {
+        templateUrl : "templates/about.html",
+        controller : "portController",
+        controllerAs : "portCtrl"
+      })
+      .when("/about", {
+        templateUrl : "templates/about.html",
+        controller : "portController",
+        controllerAs : "portCtrl"
+      })
+      .when("/projects", {
+        templateUrl : "templates/projects.html",
+        controller : "portController",
+        controllerAs : "portCtrl"
+      })
+  });
 
   app.controller("portController", portController);
 
   function portController(){
     var portCtrl = this;
+
     portCtrl.projectData = projectData;
+    console.log("portCtrl.showDetails", portCtrl.showDetails);
+    // portCtrl.displayThis = [1, 1, 1, 1, 1, 1, 1, 1, 1];
+    // portCtrl.index = null;
+    // portCtrl.showDetails = 0;
+
+    // portCtrl.showDetails = function(index){
+    //   portCtrl.index = index;
+    //   portCtrl.displayThis[index] = 0;
+    // };
+    //
+    // portCtrl.hideDetails = function(index){
+    //   portCtrl.index = index;
+    //   portCtrl.displayThis[index] = 1;
+    // };
+
   };
 })();
 

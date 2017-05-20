@@ -136,10 +136,17 @@ header{
 /******************************************************************************/
 
 h1{
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-size: 25px;
-  padding: 8px;
+  color: gray;
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.about-title{
+  padding-left: 8px;
 }
 
 .contact-email, .contact-linkedin{
@@ -160,7 +167,7 @@ article{
 
 .self-description{
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 25px;
 }
 .project-img{
   width: 100%;
@@ -189,7 +196,18 @@ article{
   box-shadow: 1px 1px 6px 6px lightgray;
 }
 
-.project-source-button{
+/*.description-section{
+  height: 100%;
+  display: none;
+}
+.image-section:hover{
+  display: none;
+}
+.description-section:hover{
+  display: block;
+}*/
+
+.project-source-button, .project-link-button{
   color: #00bcd4;
   background-color: white;
   float: right;
@@ -197,7 +215,7 @@ article{
   font-size: 14px;
 }
 
-.project-source-button:hover{
+.project-source-button:hover, .project-link-button{
   color: rgba(0, 188, 212, 0.88);
 }
 

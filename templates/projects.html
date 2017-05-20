@@ -1,0 +1,34 @@
+<h1 class="projects-title">
+  projects
+</h1>
+
+<section class = "single-project" ng-repeat = "project in portCtrl.projectData">
+
+  <section class="single-project-card" ng-mouseover = "portCtrl.showDetails($index)" ng-mouseleave = "portCtrl.hideDetails($index)">
+
+    <section class = "image-section">
+      <!-- <a class="project-link" target="_blank" ng-href="{{project.url}}">
+        <img class = "project-img" ng-src="{{project.img}}" alt="" >
+      </a> -->
+
+      <img class = "project-img" ng-src="{{project.img}}" alt="" >
+
+    </section>
+
+    <!-- <section class = "description-section" ng-show = "!portCtrl.displayThis[portCtrl.index]">
+      heya
+    </section> -->
+
+    <a class = "src-link" ng-href="{{project.src}}" target="_blank">
+      <button class="default-flat-button project-source-button" type="button" name="button">SOURCE
+      </button>
+    </a>
+
+    <a class = "project-link" ng-href="{{project.url}}" target="_blank">
+      <button class="default-flat-button project-link-button" type="button" name="button">WEBPAGE
+      </button>
+    </a>
+
+  </section>
+
+</section>

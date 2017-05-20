@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-  <body>
+  <body ng-controller = "portController as portCtrl">
     <header>
 
       <section class="home-link-section col-lg-4 col-md-4 col-sm-12">
@@ -18,8 +18,8 @@
       </section>
 
       <ul class="nav-bar col-lg-8 col-md-8">
-        <li><a href="#projects"><button class="default-flat-button" type="button" name="button">PROJECTS</button></a></li>
-        <li><a href="#about"><button class="default-flat-button" type="button" name="button">ABOUT</button></a></li>
+        <li><a href="#!/projects"><button class="default-flat-button" type="button" name="button">PROJECTS</button></a></li>
+        <li><a href="#!/about"><button class="default-flat-button" type="button" name="button">ABOUT</button></a></li>
 
         <!-- <li><a href="#contact"><button type="button" name="button-">CONTACT</button></a></li> -->
       </ul>
@@ -33,61 +33,17 @@
     </header>
 
     <article>
-      <!-- <br><br> -->
-      <section id = "about" class = "about-section">
-        <h1>
-          About
-        </h1>
 
-        <section class="self-description">
-          Hi, I am Vaibhav. I am a final year student at IIT Kharagpur. As web platform is a major way to realise great products I wanted to learn web technologies. I developed skills in HTML, CSS, Javascript, AngularJs.
-          <br>
-          <br>
-          <p>I am very much interested in taking up full time positions in organisations where I can put forth my skills for best use. Connect with me on
-            <a class = "contact-linkedin" target="_blank" href="https://www.linkedin.com/in/vkona8/">Linkedin</a> or
-            <a class = "contact-email" target="_top" href="mailto:vkona8@gmail.com?Subject=Hello%20again">email</a> me
-          </p>
-        </section>
+      <!-- <br><br> -->
+      <!-- <section id = "about" class = "about-section">
+
+      </section> -->
+
+      <section class="main-view-section" ng-view>
+
       </section>
 
-
-      <section id = "projects" class="projects-section" ng-controller = "portController as portCtrl" >
-
-        <h1>
-          projects
-        </h1>
-
-        <section class = "single-project" ng-repeat = "project in portCtrl.projectData">
-
-          <section class="single-project-card">
-            <section class = "image-section">
-              <a class="project-link" target="_blank" ng-href="{{project.url}}">
-                <img class = "project-img" ng-src="{{project.img}}" alt="" >
-              </a>
-
-              <a class = "src-link" ng-href="{{project.src}}" target="_blank">
-                <button class="default-flat-button project-source-button" type="button" name="button">SOURCE
-                </button>
-              </a>
-            </section>
-
-            <!-- <section class = "description-section">
-
-              <section class="project-details-section">
-
-              </section>
-
-              <a class = "src-link" ng-href="{{project.src}}" target="_blank">
-                <button class="default-flat-button project-source-button" type="button" name="button">
-                  SOURCE
-                </button>
-              </a>
-            </section> -->
-
-
-          </section>
-
-        </section>
+      <section id = "projects" class="projects-section">
 
       </section >
 
@@ -119,7 +75,8 @@
     </article>
 
     <script type="text/javascript" src = "scripts/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src = "scripts/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
     <script type="text/javascript" src = "scripts/main.js"></script>
   </body>
 
